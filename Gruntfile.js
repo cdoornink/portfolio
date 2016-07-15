@@ -10,8 +10,8 @@ module.exports = function(grunt) {
         separator: ';',
       },
       js: {
-        src: ['app/scripts/base-classes/*', 'app/scripts/extended-classes/*', 'app/scripts/levels/**/*', 'app/scripts/*', 'app/start.js'],
-        dest: 'dist/app/ninja.js',
+        src: ['app/scripts/*', 'app/start.js'],
+        dest: 'dist/app/cd.js',
       },
       libs: {
         src: ['libs/*'],
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
       },
       styles: {
         src: ['app/styles/*'],
-        dest: 'dist/app/ninja.css',
+        dest: 'dist/app/cd.css',
       }
     },
     copy: {
