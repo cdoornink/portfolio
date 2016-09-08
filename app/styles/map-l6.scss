@@ -1,0 +1,79 @@
+.coin.l6-coin {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background-color: #333353;
+  background-image: url(assets/ninja/ninja.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include xb(transform, translate3d(-3205px, -817px, -4350px));
+	@include xb(animation, slow_rotating_coin6 10s infinite linear);
+}
+.coin.l6-coin:before, .coin.l6-coin:after {
+  background-color: #333353;
+}
+@include keyframes(slow_rotating_coin6) {
+  25% {
+    	@include xb(transform, translate3d(-3205px, -817px, -4350px) rotateY(-20deg));
+  }
+  75% {
+    	@include xb(transform, translate3d(-3205px, -817px, -4350px) rotateY(80deg));
+  }
+}
+
+.main .l6-content {
+  position: absolute;
+  top: calc(50% - 115px);
+  left: calc(50% - 100px);
+  width: 50%;
+  max-width: 600px;
+  .header {
+    @include xb(transform, translateX(2000px));
+    font-weight: 300;
+    height: 52px;
+    color: #333353;
+    a {
+      background-color: #333353;
+      position: absolute;
+      left: 95px;
+      top: 12px;
+    }
+    span {
+      top: 17px;
+      left: 133px;
+    }
+  }
+  .sub-header {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+  .description-header {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+  .description-body {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+}
+
+.main.l6 .l6-content {
+  z-index: 10;
+  .header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1s);
+  }
+  .sub-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.1s);
+  }
+  .description-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.2s);
+  }
+  .description-body {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.3s);
+  }
+}

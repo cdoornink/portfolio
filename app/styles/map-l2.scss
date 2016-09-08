@@ -1,0 +1,73 @@
+.coin.l2-coin {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background-color: #111;
+  background-image: url(assets/napster/white-logo.png);
+  background-size: 70% 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  @include xb(transform, translate3d(-479px, 0, -1310px));
+	@include xb(animation, slow_rotating_coin2 10s infinite linear);
+}
+.coin.l2-coin:before, .coin.l2-coin:after {
+  background-color: #333;
+}
+@include keyframes(slow_rotating_coin2) {
+  25% {
+    	@include xb(transform, translate3d(-479px, 0, -1310px) rotateY(-50deg));
+  }
+  75% {
+    	@include xb(transform, translate3d(-479px, 0, -1310px) rotateY(50deg));
+  }
+}
+
+.main .l2-content {
+  position: absolute;
+  top: calc(50% - 120px);
+  left: calc(50% - 100px);
+  width: 50%;
+  max-width: 600px;
+  .header {
+    @include xb(transform, translateX(2000px));
+    background: url(assets/napster/black-title.png);
+    width: 150px;
+    height: 32px;
+    background-size: 100%;
+    a {
+      margin-left: 164px;
+    }
+  }
+  .sub-header {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+  .description-header {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+  .description-body {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+}
+
+.main.l2 .l2-content {
+  z-index: 10;
+  .header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1s);
+  }
+  .sub-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.1s);
+  }
+  .description-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.2s);
+  }
+  .description-body {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.3s);
+  }
+}

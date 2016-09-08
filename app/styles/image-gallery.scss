@@ -1,0 +1,137 @@
+.image-gallery {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 220px;
+  width: 100%;
+  > div {
+    position: absolute;
+    top: 0;
+    // background: rgba(255,255,255,.7);
+    @include xb(transform, translate3d(0,240px,0));
+    @include xb(transition, transform .5s);
+    width: 100%;
+    > div {
+      padding: 20px 0;
+      overflow: hidden;
+      position: relative;
+      margin: 0 auto;
+      > div {
+        margin: 0 10px;
+        width: 300px;
+        height: 180px;
+        float: left;
+        box-shadow: 0 0 6px rgba(0,0,0,.1);
+      }
+    }
+  }
+  &.l2 .l2, &.l3 .l3, &.l4 .l4, &.l5 .l5, &.l6 .l6, {
+    @include xb(transform, translate3d(0,0,0));
+    @include xb(transition-delay, 1.5s);
+  }
+  .l2 {
+    > div {
+      width: calc(268px + 334px + 283px + 60px);
+        > div {
+        background-size: cover;
+        &:nth-child(1) {
+          width: 268px;
+          background-image: url(assets/napster/1.png);
+        }
+        &:nth-child(2) {
+          width: 334px;
+          background-image: url(assets/napster/2.png);
+        }
+        &:nth-child(3) {
+          width: 283px;
+          background-image: url(assets/napster/4.png);
+        }
+      }
+    }
+  }
+  .l3 {
+    > div {
+      width: calc(313px + 306px + 101px + 101px + 80px);
+        > div {
+        background-size: cover;
+        &:nth-child(1) {
+          width: 313px;
+          background-image: url(assets/recipes/4.png);
+        }
+        &:nth-child(2) {
+          width: 306px;
+          background-image: url(assets/recipes/2.png);
+          background-position: center -28px;
+          box-shadow: none;
+        }
+        &:nth-child(3) {
+          width: 101px;
+          background-image: url(assets/recipes/m1.png);
+        }
+        &:nth-child(4) {
+          width: 101px;
+          background-image: url(assets/recipes/m2.png);
+        }
+      }
+    }
+  }
+  .l4 {
+    > div {
+      width: calc(266px + 266px + 266px + 60px);
+        > div {
+        background-size: cover;
+        &:nth-child(1) {
+          width: 266px;
+          background-image: url(assets/bball/1.png);
+          background-position-x: -1px;
+        }
+        &:nth-child(2) {
+          width: 265px;
+          background-position-x: -1px;
+          background-image: url(assets/bball/2.png);
+        }
+        &:nth-child(3) {
+          width: 265px;
+          background-position-x: -1px;
+          background-image: url(assets/bball/3.png);
+        }
+      }
+    }
+  }
+  .l5 {
+    > div {
+      width: calc(306px + 20px);
+        > div {
+        background-size: cover;
+        &:nth-child(1) {
+          background-image: url(assets/activetime/2.png);
+          width: 306px;
+          background-position: center -28px;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  .l6 {
+    > div {
+      width: calc(362px + 360px + 380px + 60px);
+        > div {
+        background-size: cover;
+        &:nth-child(1) {
+          width: 362px;
+          background-image: url(assets/ninja/1.png);
+          background-position: -2px -1px;
+          background-size: 364px;
+        }
+        &:nth-child(2) {
+          width: 360px;
+          background-image: url(assets/ninja/4.png);
+        }
+        &:nth-child(3) {
+          width: 380px;
+          background-image: url(assets/ninja/3.png);
+        }
+      }
+    }
+  }
+}

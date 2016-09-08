@@ -1,0 +1,49 @@
+// circle {
+//   background: white;
+//   height: 500px;
+//   width: 500px;
+//   position: absolute;
+//   top: calc(50vh - 250px);
+//   border-radius: 2%;
+//   @for $i from 1 through 20 {
+//     &:nth-child(#{$i}) {
+//       @include xb(transform,  scale(($i * $i) / 7) translate3d(0px, 0px, (-2000px - (300 * $i)) ));
+//     }
+//   }
+// }
+//
+// .circle-background {
+//   circle {
+//     @for $i from 1 through 10 {
+//       &:nth-child(#{$i*2}) {
+//         @include xb(animation, grayFlash 1.5s forwards);
+//         animation-delay: .1s + (.2s * $i);
+//       }
+//     }
+//   }
+//
+// }
+// .map.l2 .circle-background {
+//   circle {
+//     @include xb(animation, toBlack 2s forwards);
+//     @for $i from 1 through 20 {
+//       &:nth-child(#{20 - $i}) {
+//         animation-delay: .1s + (.03s * $i)
+//       }
+//     }
+//   }
+// }
+// @include keyframes(grayFlash) {
+//   50% {
+//     background: #f7f7f7;
+//   }
+//   100% {
+//     background: white;
+//   }
+// }
+//
+// @include keyframes(toBlack) {
+//   100% {
+//     background: #222;
+//   }
+// }

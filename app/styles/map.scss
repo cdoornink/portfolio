@@ -1,0 +1,122 @@
+.line1 {
+  width: 4px;
+  height: 223px;
+  background: #2a3c50;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  @include xb(transform, translateZ(-9px));
+}
+.line2 {
+  width: 1400px;
+  height: 4px;
+  background: linear-gradient(to right, #2a3c50 0%, black 100%);
+  position: absolute;
+  top: calc(50% + 218px);
+  left: calc(50% + 2px);
+  @include xb(transform, translateZ(-4px) translateX(-700px) rotateY(110deg) translateX(700px) rotateX(90deg));
+}
+.line3 {
+  width: 4px;
+  height: 220px;
+  background: black;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  @include xb(transform, translate3d(-479px, 0, -1319px));
+}
+.line4 {
+  width: 1400px;
+  height: 4px;
+  background: linear-gradient(to right, black 0%, #23936c 100%);
+  position: absolute;
+  top: calc(50% + 218px);
+  left: calc(50% + 2px);
+  @include xb(transform, translate3d(-479px, 0, -1319px) translateX(-700px) rotateY(130deg) rotateZ(30deg) translateX(700px) rotateX(40deg));
+}
+.line5 {
+  width: 4px;
+  height: 220px;
+  background: #23936c;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  @include xb(transform, translate3d(-1259px, 918px, -2248px));
+}
+.line6 {
+  width: 1400px;
+  height: 4px;
+  background: linear-gradient(to right, #23936c 0%, #f17d00 100%);
+  position: absolute;
+  top: calc(50% + 218px);
+  left: calc(50% + 2px);
+  @include xb(transform, translate3d(-1259px, 701px, -2248px) translateX(-700px) rotateY(150deg) rotateZ(-10deg) translateX(700px) rotateX(0deg));
+}
+.line7 {
+  width: 4px;
+  height: 220px;
+  background: #f17d00;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  @include xb(transform, translate3d(-2452px, 675px, -2937px));
+}
+.line8 {
+  width: 1400px;
+  height: 4px;
+  background: linear-gradient(to right, #f17d00 0%, #4bc2c0 100%);
+  position: absolute;
+  top: calc(50% + 218px);
+  left: calc(50% + 2px);
+  @include xb(transform, translate3d(-2452px, 455px, -2937px) translateX(-700px) rotateY(60deg) rotateZ(-46deg) translateX(700px) rotateX(40deg));
+}
+.line9 {
+  width: 4px;
+  height: 220px;
+  background: #4bc2c0;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  @include xb(transform, translate3d(-1967px, -550px, -3779px));
+}
+.line10 {
+  width: 1400px;
+  height: 4px;
+  background: linear-gradient(to right, #4bc2c0 0%, #333353 100%);
+  position: absolute;
+  top: calc(50% + 218px);
+  left: calc(50% + 2px);
+  @include xb(transform, translate3d(-1966px, -550px, -3779px) translateX(-700px) rotateY(155deg) rotateZ(-11deg) translateX(700px) rotateX(0deg));
+}
+.line11 {
+  width: 4px;
+  height: 220px;
+  background: #333353;
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  @include xb(transform, translate3d(-3210px, -817px, -4359px));
+}
+
+
+.map {
+  @include xb(transition, transform .8s .5s);
+}
+.map.l1 {
+  @include xb(transform, translate3d(0,0,0));
+}
+.map.l2 {
+  @include xb(transform, translate3d(270px, -140px, 1200px));
+}
+.map.l3 {
+  @include xb(transform, translate3d(1050px, -1250px, 2124px));
+}
+.map.l4 {
+  @include xb(transform, translate3d(2235px, -1049px, 2795px));
+}
+.map.l5 {
+  @include xb(transform, translate3d(1760px, 440px, 3695px));
+}
+.map.l6 {
+  @include xb(transform, translate3d(3010px, 707px, 4295px));
+}

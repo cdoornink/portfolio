@@ -1,69 +1,119 @@
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Chris Doornink | Web Developer</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+  <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
   <script src='vendor.js'></script>
 </head>
 <body>
-<div>
-  <div class="resume">
 
-    <div class='header'>Chris Doornink</div>
-    <div class='sub-header'>Web Applications Developer</div>
-    <div class='border-one'></div>
-    <div class='border-two'></div>
-    <div class='border-three'></div>
-
-    <div class='images'>
-      <div class="image item-one napster-main-image"></div>
-      <div class="image item-two recipes-main-image"></div>
-      <div class="image item-three activetime-main-image"></div>
-      <div class="image item-four bball-main-image"></div>
-    </div>
-
-  </div>
-  <div class="portfolio-items">
-    <div class='images'>
-      <div class="image item-one napster-main-image"></div>
-      <div class="image item-two recipes-main-image"></div>
-      <div class="image item-three activetime-main-image"></div>
-      <div class="image item-four bball-main-image"></div>
-    </div>
-    <div class="sub-images">
-      <div class='item-one'></div>
-      <div class='item-two'></div>
-      <div class='item-three'></div>
-      <div class='item-four'></div>
-    </div>
-    <div class="descriptions">
-      <div class='item-one description napster-description'>
-        <div class='line1'></div>
-        <div class="title">Napster</div>
-        <div class="sub-title">Music Streaming Platform</div>
-        <div class="description-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p>
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-      <div class='item-two description recipes-description'>
-        <div class="title">Recipes</div>
-        <div class="sub-title">Family meal planning and shopping list</div>
-        <div class='line1'></div>
-        <div class="description-body">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-      </div>
-
+  <div id='map-container' class='map-container'>
+    <div class='map map-layer l1'>
+      <div class="coin start"></div>
+      <div class="line-bracket"></div>
+      <div class="line line0"></div>
+      <div class="line line1"></div>
+      <div class="line line2"></div>
+      <div class="coin l2-coin"></div>
+      <div class="line line3"></div>
+      <div class="line line4"></div>
+      <div class="coin l3-coin"></div>
+      <div class="line line5"></div>
+      <div class="line line6"></div>
+      <div class="coin l4-coin"></div>
+      <div class="line line7"></div>
+      <div class="line line8"></div>
+      <div class="coin l5-coin"></div>
+      <div class="line line9"></div>
+      <div class="line line10"></div>
+      <div class="coin l6-coin"></div>
+      <div class="line line11"></div>
     </div>
   </div>
 
+  <div class="main l1">
+    <div class="l1-content">
+      <div class='header'>Chris Doornink</div>
+      <div class='sub-header'>Web Applications Developer</div>
+      <div class='description-body'>I am a front end developer based in Seattle. I love javascript, css, and building creative applications from the ground up. Scroll to check out some of the things I've been working on.</div>
+      <div class="description-header">email me at chrisdoornink@gmail.com</div>
+    </div>
 
-</div>
+    <div class='l2-content'>
+      <div class='header'><a href="https://app.napster.com" target="_blank"></a><span>(You need an account to see the app)</span></div>
+      <div class='sub-header'>Sr Web Developer</div>
+      <div class="description-header">March 2011 - Today</div>
+      <div class="description-body">
+        <p>I work on the signed-in web application for Napster subscribers, coordinating with a team on a large scale, heavy traffic website in an agile environment.</p>
+        <p>When I started the app was a Rails app. Since then we have done several ground-up rebuilds of the our app using the Ember Javascript framework.</p>
+      </div>
+    </div>
+
+    <div class='l3-content'>
+      <div class='header'>Recipes <a href="http://chrisdoornink.com/familyRecipesDemo" target="_blank"></a></div>
+      <div class='sub-header'>Family meal planning and shopping list</div>
+      <div class="description-header">December 2015</div>
+      <div class="description-body">
+        <p>I developed this purely for my wife and myself to use. It has all the recipes that we have collected other sources, normalized and simplified for ease of use. When making a meal plan for the week, we simply add the meals we want and the appropriate ingredients are added to the shopping list, organized by aisle. Other items can easily be added to the shopping list and everything stays in sync no matter who is adding things.</p>
+        <p>This is an Ember app integrated with Firebase. Many friends have asked if I can make it available for their use which would require a lot of changes and added authentication features which I might eventually when I have the time.</p>
+      </div>
+    </div>
+
+    <div class='l4-content'>
+      <div class='header'>Team Analytics <a href="https://blistering-fire-5623.firebaseapp.com/" target="_blank"></a><span>username: demo@teamanalytics.com password: demo</span></div>
+      <div class='sub-header'>Basketball stat keeping and analytics application</div>
+      <div class="description-header">2014</div>
+      <div class="description-body">
+        <p>This app allows a user to easily record the stats of both teams of a basketball game including shot charts, box scores, and detailed play by play. These stats are then compiled to give detailed team and player stats, as well as advanced analytics such as player efficiency and true shooting percentage.</p>
+        <p>This is an Ember app integrated with Firebase. It is pretty much complete minus some bugs and advanced features. I also haven't made any attempt to get people to use it, but really its a pretty great app.</p>
+      </div>
+    </div>
+
+    <div class='l5-content'>
+      <div class='header'>ActiveTi.me <a href="http://activeti.me" target="_blank"></a></div>
+      <div class='sub-header'>Data visualization integration with Fitbit</div>
+      <div class="description-header">Summer 2015</div>
+      <div class="description-body">
+        <p>Using the Fitbit API to visualize how active a user is across various parameters.</p>
+        <p>This was another personal project that I just did for fun. I wanted to see what kind of data was availble on the Fitbit API and how easy it would be to hook up to.</p>
+      </div>
+    </div>
+
+    <div class='l6-content'>
+      <div class='header'>Ninja <a href="http://chrisdoornink.com/ninja" target="_blank"></a><span>works best in Chrome currently</span></div>
+      <div class='sub-header'>2d platform stealth game built with Javscript/CSS</div>
+      <div class="description-header">Spring 2016</div>
+      <div class="description-body">
+        <p>I wanted to see how well a game could perform if it is built and rendered entirely with javascript and css.</p>
+        <p>Turns out the answer is pretty well. I've been able to put over 200 animated characters moving on screen without any hiccups.</p>
+        <p>The game is far from finished, but the first stage is at least playable. I am also collaborating with a designer to get it looking like it does in first screenshot when we both have time...</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="image-gallery l1">
+    <div class='l2'><div><div></div><div></div><div></div></div></div>
+    <div class='l3'><div><div></div><div></div><div></div><div></div></div></div>
+    <div class='l4'><div><div></div><div></div><div></div></div></div>
+    <div class='l5'><div><div></div></div></div>
+    <div class='l6'><div><div></div><div></div><div></div></div></div>
+  </div>
+
+  <div class='right-nav l1'>
+    <div class="nav-link l1"></div>
+    <div class="nav-link l2"></div>
+    <div class="nav-link l3"></div>
+    <div class="nav-link l4"></div>
+    <div class="nav-link l5"></div>
+    <div class="nav-link l6"></div>
+    <navline></navline>
+  </div>
 </body>
   <link rel='stylesheet' href='cd.css'>
   <script src='cd.js'></script>

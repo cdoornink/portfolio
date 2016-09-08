@@ -1,0 +1,119 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  /*background: linear-gradient(to bottom, #fff 0%, #f3f3f3 350px, #ddd 370px, #f3f3f3 371px, #eee 400px, #ccc 100%);*/
+  font-family: "Karla", "avenir", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  /*background: #f5f2e9;*/
+  /*background: #0ca7d7;*/
+  /*background: url(assets/bg1.png);*/
+  background: url(http://67.media.tumblr.com/febf36079c3c924ab0d23d50808bfcc6/tumblr_nbdj25PUPc1tf8vylo1_1280.png);
+  background-size: cover;
+  overflow: hidden;
+  background: #eee;
+}
+
+@import 'mixins';
+
+.map-container {
+  @include xb(transform-style, preserve-3d);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  @include xb(transform, perspective(400px) translate3d(-0px, 10px, 0px));
+}
+.map-layer {
+  @include xb(transform-style, preserve-3d);
+  overflow: visible;
+  position: absolute;;
+  height: 100%;
+  width: 100%;
+  @include xb(transition, transform 2s ease-in-out);
+  z-index: 1;
+}
+.map-background {
+  overflow: visible;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  /*display: none;*/
+}
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  .portfolio-items {
+    display: none;
+  }
+}
+
+.header {
+  font-family: "Brandon", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  transition: transform .4s cubic-bezier(1,1,1,1.1);
+  a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/linky.png);
+    background-color: black;
+    background-size: 19px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    margin-top: 0px;
+  }
+  span {
+    font-size: 11px;
+    font-weight: 400;
+    position: absolute;
+    top: 8px;
+    left: 202px;
+    width: 164px;
+  }
+}
+.sub-header {
+  font-family: "Karla", "avenir", "Helvetica Neue", Helvetica, "Segoe UI", Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  transition: transform .4s ease-in-out .1s;
+}
+.description-header {
+  font-size: 14px;
+  font-weight: 600;
+  transition: transform .4s ease-in-out .2s;
+}
+.description-body {
+  font-size: 14px;
+  font-weight: 400;
+  transition: transform .4s ease-in-out .3s;
+}
+/*.bottom-nav {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background: #2a3c50;
+}*/
+
+@import "coin";
+@import "direction-arrows";
+@import "fonts";
+// @import "window-art";
+@import "map";
+@import "map-l1";
+@import "map-l2";
+@import "map-l3";
+@import "map-l4";
+@import "map-l5";
+@import "map-l6";
+@import "hex-dome";
+@import "right-nav";
+@import "image-gallery";

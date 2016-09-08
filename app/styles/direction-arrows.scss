@@ -1,0 +1,107 @@
+.direction-arrows {
+  font-size: 80px;
+  font-family: "TitleFont", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  .right {
+    display: none;
+    position: fixed;
+    right: 15px;
+    top: calc(50% - 63px);
+    cursor: pointer;
+    &.active {
+      display: block;
+      @include xb(animation, arrow-animation-right 2s infinite);
+    }
+  }
+  .left {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: calc(50% - 63px);
+    cursor: pointer;
+    &.active {
+      display: block;
+      @include xb(animation, arrow-animation-left 2s infinite);
+    }
+  }
+  .up {
+    display: none;
+    position: absolute;
+    left: calc(50% - 15px);
+    top: -25px;
+    @include xb(transform, rotate(90deg));
+    cursor: pointer;
+    &.active {
+      display: block;
+      @include xb(animation, arrow-animation-up 2s infinite);
+    }
+  }
+  .down {
+    display: none;
+    position: absolute;
+    left: calc(50% - 15px);
+    bottom: -25px;
+    @include xb(transform, rotate(-90deg));
+    cursor: pointer;
+    &.active {
+      display: block;
+      @include xb(animation, arrow-animation-down 2s infinite);
+    }
+  }
+}
+
+@include keyframes(arrow-animation-right) {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  	@include xb(transform, translate3d(-60px,0px,0));
+  }
+  100% {
+    opacity: 1;
+  	@include xb(transform, translate3d(0px,0px,0));
+  }
+}
+
+@include keyframes(arrow-animation-left) {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  	@include xb(transform, translate3d(60px,0px,0));
+  }
+  100% {
+    opacity: 1;
+  	@include xb(transform, translate3d(0px,0px,0));
+  }
+}
+
+@include keyframes(arrow-animation-up) {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    @include xb(transform, rotate(90deg) translate3d(60px,0px,0));
+  }
+  100% {
+    opacity: 1;
+  	@include xb(transform, rotate(90deg) translate3d(0px,0px,0));
+  }
+}
+
+@include keyframes(arrow-animation-down) {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+    @include xb(transform, rotate(-90deg) translate3d(60px,0px,0));
+  }
+  100% {
+    opacity: 1;
+  	@include xb(transform, rotate(-90deg) translate3d(0px,0px,0));
+  }
+}

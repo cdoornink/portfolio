@@ -1,0 +1,54 @@
+.coin.start {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background-image: url(assets/my_pic6.jpg);
+}
+.coin.start:before, .coin.start:after {
+  background-color: #2d323e;
+}
+
+.main .l1-content {
+  text-align: center;
+  position: absolute;
+  top: calc(50% - 170px);
+  width: calc(100% - 200px);
+  margin: 0 100px;
+  .header {
+    @include xb(transform, translateX(-2000px));
+    color: #2a3c50;
+    font-weight: 500;
+  }
+  .sub-header {
+    @include xb(transform, translateX(-2000px));
+    color: #2a3c50;
+  }
+  .description-header {
+    @include xb(transform, translateY(400px));
+    color: #111;
+  }
+  .description-body {
+    margin: 357px 25% 16px;
+    @include xb(transform, translateY(400px));
+    color: #111;
+  }
+}
+.main.l1 .l1-content {
+  z-index: 10;
+  .header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1s);
+  }
+  .sub-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.1s);
+  }
+  .description-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.2s);
+  }
+  .description-body {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.3s);
+  }
+}

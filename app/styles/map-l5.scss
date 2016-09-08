@@ -1,0 +1,74 @@
+.coin.l5-coin {
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background-color: white;
+  background-image: url(assets/activetime/clock.png);
+  background-size: cover;
+  background-position: center center;
+  @include xb(transform, translate3d(-1961px, -550px, -3770px));
+	@include xb(animation, slow_rotating_coin5 10s infinite linear);
+}
+.coin.l5-coin:before, .coin.l5-coin:after {
+  background-color: white;
+}
+@include keyframes(slow_rotating_coin5) {
+  25% {
+    	@include xb(transform, translate3d(-1961px, -550px, -3770px) rotateY(-40deg));
+  }
+  75% {
+    	@include xb(transform, translate3d(-1961px, -550px, -3770px) rotateY(60deg));
+  }
+}
+
+.main .l5-content {
+  position: absolute;
+  top: calc(50% - 115px);
+  left: calc(50% - 100px);
+  width: 50%;
+  max-width: 600px;
+  .header {
+    @include xb(transform, translateX(2000px));
+    font-weight: 300;
+    height: 52px;
+    color: #f54786;
+    a {
+      background-color: #f54786;
+      position: absolute;
+      left: 188px;
+      top: 12px;
+    }
+  }
+  .sub-header {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+  .description-header {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+  .description-body {
+    @include xb(transform, translateX(2000px));
+    color: #111;
+  }
+}
+
+.main.l5 .l5-content {
+  z-index: 10;
+  .header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1s);
+  }
+  .sub-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.1s);
+  }
+  .description-header {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.2s);
+  }
+  .description-body {
+    @include xb(transform, translateX(0px));
+    @include xb(transition-delay, 1.3s);
+  }
+}
